@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import CadastroAluno from './Pages/Admin/CadastroAluno/index';
+import CadastroDisciplina from './Pages/Admin/CadastroDisciplina/index';
+import CadastroProfessores from './Pages/Admin/CadastroProfessores/index';
+import Lancamento from './Pages/Admin/Lancamento/index';
+import DefinirPeriodoDeMatricula from './Pages/Admin/PeriodoAluno/index';
+import Login from "./Pages/SignIn/Login";
+import InicioAdmin from './Pages/Admin/InicioAdmin/index';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Login />
+        </Route>
+        <Route exact path="/admin/Cadastro-de-professores">
+          <CadastroProfessores />
+        </Route> 
+        <Route exact path="/admin/Cadastro-de-alunos">
+          <CadastroAluno />
+        </Route> 
+        <Route exact path="/admin/Cadastro-de-disciplina">
+          <CadastroDisciplina />
+        </Route> 
+        <Route exact path="/admin/lancamento">
+          <Lancamento />
+        </Route>
+        <Route exact path="/admin/Definicao-do-periodo-de-matricula">
+          <DefinirPeriodoDeMatricula />
+        </Route> 
+        <Route exact path="/admin">
+          <InicioAdmin />
+        </Route> 
+      </Switch>
+    </Router>
+
   );
 }
 
