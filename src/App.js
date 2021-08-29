@@ -6,6 +6,7 @@ import Lancamento from './Pages/Admin/Lancamento/index';
 import DefinirPeriodoDeMatricula from './Pages/Admin/PeriodoAluno/index';
 import Login from "./Pages/SignIn/Login";
 import InicioAdmin from './Pages/Admin/InicioAdmin/index';
+import InicioAluno from './Pages/Aluno/Inicio';
 
 function App() {
   return (
@@ -31,6 +32,9 @@ function App() {
         </Route> 
         <Route exact path="/admin">
           <InicioAdmin />
+        </Route> 
+        <Route exact path="/inicio">
+          <InicioAluno />
         </Route> 
       </Switch>
     </Router>

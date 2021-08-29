@@ -2,7 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+
   main {
+    padding-left: 240px;
     margin: 5% auto;
     
     h1 {

@@ -7,18 +7,23 @@ export const Container = styled.div`
     background-color: #f0f5f0;
     padding: 32px 0px 0px 240px;
 
-
     h1 {
-      margin: 32px 0px 64px 32px;
       color: #24527C;
+      margin: 32px 0px 72px 32px;
     }
 
     .etiquetas {
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
+
+      .position {
+        position: relative;
+        bottom: 280px;
+      }
 
       .etiqueta-item {
-        flex: 1 1 240px;
+        flex: 2 1 320px;
         margin: 32px;
         max-width: 460px;
         background-color: #ffff;

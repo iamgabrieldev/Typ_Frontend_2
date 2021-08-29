@@ -1,0 +1,9 @@
+/admin
+/admin/Cadastro-de-alunos
+/admin/Cadastro-de-disciplina
+http://localhost:3000/admin/
+http://localhost:3000/admin/Cadastro-de-alunos
+http://localhost:3000/admin/Cadastro-de-professores
+http://localhost:3000/admin/Cadastro-de-disciplina
+http://localhost:3000/admin/lancamento
+http://localhost:3000/inicio

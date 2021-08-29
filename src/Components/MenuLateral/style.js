@@ -5,15 +5,18 @@ export const Container = styled.aside`
   width: 180px;
   height: 200vh;
   background-color: #24527C;
-  padding: 20px;
+  padding: 32px 24px;
+  position: fixed;
 
   div {
     margin-top: 200px;
   }
 
   img {
+      cursor: pointer;
       display: block;
-      margin: 0 auto;
+      margin: -16px auto;
+      margin-bottom: 64px;
     }
 
 `
