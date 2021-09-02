@@ -51,6 +51,7 @@ export default function Login() {
             type="password"
           />
           <button
+            className="button"
             type="submit"
             onClick={ () => history.push(menuLinks[0].path) }
             >
